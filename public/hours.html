@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Horário</title>
+    <link rel="stylesheet" href="static/hours.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <img src="static/drurso.png" alt="Foto de perfil">
+                <h2 class="title title-primary">Dr. Jone</h2>
+                <p class="description description-primary">Psicologia</p>
+                <p class="description description-primary">Formado em Psicologia pela UFABC <br> Especializado em Depressão</p>
+
+                <button class="btn btn-primary" onclick="location.href='/hours?day=01/12/2021'">01/12/2021</button> 
+                <button class="btn btn-primary" onclick="location.href='/hours?day=02/12/2021'">02/12/2021</button>  
+                <button class="btn btn-primary" onclick="location.href='/hours?day=03/12/2021'">03/12/2021</button> <br>
+                <button class="btn btn-primary" onclick="location.href='/hours?day=04/12/2021'">04/12/2021</button> 
+                <button class="btn btn-primary" onclick="location.href='/hours?day=06/12/2021'">06/12/2021</button>  
+                <button class="btn btn-primary" onclick="location.href='/hours?day=07/12/2021'">07/12/2021</button> <br>
+            </div>  
+
+            <div class="second-column">
+                <button class="btn btn-second voltar">Voltar</button>
+                <h2 id="nome" class="title title-second">Dr. Jone</h2>
+                <p class="description description-second">Psicologia</p>
+                <div class="form">
+                    <button class="btn btn-second" onclick="location.href='/agendamento?hour=08:00&day={{ day }}'">08:00</button>
+                    <button class="btn btn-second" onclick="location.href='/agendamento?hour=08:30&day={{ day }}'">08:30</button>                 
+                    <button class="btn btn-second" onclick="location.href='/agendamento?hour=09:00&day={{ day }}'">09:00</button>
+                    <button class="btn btn-second" onclick="location.href='/agendamento?hour=09:30&day={{ day }}'">09:30</button>        
+                    <button class="btn btn-second" onclick="location.href='/agendamento?hour=10:00&day={{ day }}'">10:00</button>
+                    <button class="btn btn-second" onclick="location.href='/agendamento?hour=10:30&day={{ day }}'">10:30</button>                 
+                    <button class="btn btn-second" onclick="location.href='/agendamento?hour=11:00&day={{ day }}'">11:00</button>   
+                    <button class="btn btn-second" onclick="location.href='/agendamento?hour=11:30&day={{ day }}'">11:30</button> 
+                    <button class="btn btn-second" onclick="location.href='/agendamento?hour=13:00&day={{ day }}'">13:00</button> 
+                </div>
+            </div><!-- second column -->
+        </div><!-- first content -->
+    </div>
+</body>
+</html>

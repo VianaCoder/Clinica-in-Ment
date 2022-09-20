@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="static/register.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <img src="static/Logo_ClinicSafe.png" alt="Logo ClinicSafe">
+                <p class="description description-primary">Seja bem-vindo(a)!</p>
+                <p class="description description-primary">Caso já tenho uma conta, volte para a tela anterior:</p>
+                <button class="btn btn-primary" onclick="location.href='/'">Voltar</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Criar Conta</h2>              
+                <p class="description description-second">Insira seus dados para seguir com o cadastro:</p>
+                <form class="form" action="/register-function" method="post">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Name" name="Name" required>
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="RG" name="RG" required>
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email" name="Email" required>
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha" name="Password1" required>
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Confirmar senha" name="Password2" required>
+                    </label>                    
+                    
+                    <button class="btn btn-second" type="submit" >Proxímo</button>        
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+    </div>
+</body>
+</html>

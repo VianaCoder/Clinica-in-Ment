@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(180deg, rgba(0, 240, 255, 0.8) -9.04%, rgba(239, 167, 167, 0) 90.96%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    width: 250px;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#entrar{
+    background-color: white;
+}
+
+#cadastrar{
+    background-color: gray;
+    color: white;
+}

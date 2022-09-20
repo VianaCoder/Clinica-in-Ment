@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="static/agendamento.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <img src="static/drurso.png" alt="Foto de perfil">
+                <h2 class="title title-primary">Dr. Jone</h2>
+                <p class="description description-primary">Psicologia</p>
+                <p class="description description-primary">Formado em Psicologia pela UFABC <br> Especializado em Depressão</p>
+
+                <button class="btn btn-primary" onclick="location.href='/hours?day=01/12/2021'">01/12/2021</button> 
+                <button class="btn btn-primary" onclick="location.href='/hours?day=02/12/2021'">02/12/2021</button>  
+                <button class="btn btn-primary" onclick="location.href='/hours?day=03/12/2021'">03/12/2021</button> <br>
+                <button class="btn btn-primary" onclick="location.href='/hours?day=04/12/2021'">04/12/2021</button> 
+                <button class="btn btn-primary" onclick="location.href='/hours?day=06/12/2021'">06/12/2021</button>  
+                <button class="btn btn-primary" onclick="location.href='/hours?day=07/12/2021'">07/12/2021</button> <br>
+
+            </div>  
+            <div class="second-column">
+                <button class="btn btn-second voltar">Voltar</button>
+                <h2 class="title title-second">Agendamento</h2>
+                <h2 class="title title-second">Dr. Jone</h2>
+                <form class="form" action="/agendamento-function" method="post">
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <select name="Medico">
+                            <option value="DrJones" selected>DrJones</option>
+                            <option value="Outro">Outro (Entraremos em contato)</option>
+                        </select>
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input class="description description-second" value="{{ day }} {{ hour }}" name="Hour" readonly></p>
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Name" name="Name">
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="fas fa-pencil-alt icon-modify"></i>
+                        <input type="text" placeholder="Telefone" name="Idade">
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="fas fa-file-alt icon-modify"></i>
+                        <input type="text" placeholder="RG" name="RG">
+                    </label>
+                                 
+                    <button class="btn btn-second" type="submit">Confirmar</button>        
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+    </div>
+</body>
+</html>
