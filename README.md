@@ -7,19 +7,32 @@
 ## Stack:
 
   [Flask](https://flask.palletsprojects.com/en/2.2.x/) -> Framework Web para Python
+  
   [Python](https://docs.python.org/3/)
+  
   HTML, CSS e JS -> Criação das páginas estáticas
   
 ## API utilizadas:
   
   [Google Sheets](https://developers.google.com/sheets/api/reference/rest)
   
+  
+## Desafio Pessoal:
+
+  Utilizar o menos possivel de JS e suas dinámicas para se aprofundar nas limitações e possibilidades do Flask
+  
+## Arquitetura básica:
+
+```mermaid
+graph LR
+A[FrontEnd] -- HTTP Requests --> B(Flask WebService)
+B -- API Request --> C[Google Sheets]
+```
+
 ## Desenvolvedores:
 
   Gabriel Viana -> Backend
   Laura Naville -> FrontEnd
   
-## Desafio Pessoal:
 
-  Utilizar o menos possivel de JS e suas dinámicas para se aprofundar nas limitações e possibilidades do Flask
   
